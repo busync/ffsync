@@ -9,13 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
             password: passwordInput.value
         };
 
-        if (data.username.length < 4) {
-            alert('Username must be at least 4 characters');
-            return;
-        }
-
-        if (data.password.length < 6) {
-            alert('Password must be at least 6 characters');
+        if (data.username.length < 4 || data.password.length < 6) {
+            alert('Неверный логин или пароль');
             return;
         }
 
@@ -42,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                     alert(errorMsg);
                 } else {
-                    alert(result.error || 'Login failed');
+                    alert(result.error || 'Ошибка входа');
                 }
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('Network error. Please try again.');
+            alert('Ошибка сети. Попробуйте позже');
         }
     });
 

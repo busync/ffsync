@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         if (data.username.length < 4) {
-            alert('Username must be at least 4 characters');
+            alert('Юзернейм должен быть больше 4 символов');
             return;
         }
 
         if (data.password.length < 6) {
-            alert('Password must be at least 6 characters');
+            alert('Пароль должен быть больше 6 символов');
             return;
         }
 
         if (data.password !== data.repeat_password) {
-            alert('Passwords do not match');
+            alert('Пароли не совпадают');
             return;
         }
 
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const result = await response.json();
 
             if (result.success) {
-                alert('Registration successful!');
                 window.location.href = '../dashboard/';
             } else {
                 if (result.errors) {
@@ -49,12 +48,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                     alert(errorMsg);
                 } else {
-                    alert(result.error || 'Registration failed');
+                    alert(result.error || 'Произошла ошибка!');
                 }
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('Network error');
+            alert('Ошибка сети');
         }
     });
 });

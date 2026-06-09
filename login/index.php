@@ -24,27 +24,27 @@ if (empty($csrf->getCSRF())) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Вход | FFsync</title>
     <link rel="stylesheet" href="../source/css/pages/auth/index.css">
 </head>
 
 <body>
     <main class="main">
         <div class="main--body">
-            <h1>Login</h1>
+            <h1>Вход</h1>
 
             <fieldset>
-                <legend>Username</legend>
+                <legend>Юзернейм</legend>
                 <input type="text" minlength="4" maxlength="255" id="username">
             </fieldset>
 
             <fieldset>
-                <legend>Password</legend>
+                <legend>Пароль</legend>
                 <input type="password" minlength="4" maxlength="255" id="password">
             </fieldset>
 
-            <button class="main--body--button--first">Login</button>
-            <button onclick="window.location.href='../registration/'">Registration</button>
+            <button class="main--body--button--first">Вход</button>
+            <button onclick="window.location.href='../registration/'">Регистрация</button>
         </div>
     </main>
 
