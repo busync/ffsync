@@ -26,7 +26,33 @@
   width: 100%;
   display: grid;
   gap: 20px;
+  overflow-y: scroll;
 }
 .right--center--panel .panel-items .container {
   aspect-ratio: 1/1;
+  border-radius: 20px;
+  border: var(--border);
+  background: linear-gradient(135deg, var(--ex-one), var(--ex-two));
+  color: #fff;
+}
+.right--center--panel .panel-items .new span {
+  font-size: 50px;
+}
+.right--center--panel .panel-items .item {
+  padding: 20px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.right--center--panel .panel-items .item img {
+  width: 70%;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border-radius: 20px;
+  border: var(--border);
+}
+.right--center--panel .panel-items .item p {
+  font-size: clamp(12px, 3vw, 16px);
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

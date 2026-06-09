@@ -30,9 +30,41 @@
         width: 100%;
         display: grid;
         gap: 20px;
+        overflow-y: scroll;
 
         .container {
             aspect-ratio: 1 / 1;
+            border-radius: 20px;
+            border: var(--border);
+            background: linear-gradient(135deg, var(--ex-one), var(--ex-two));
+            color: #fff;
+        }
+
+        .new {
+            span {
+                font-size: 50px;
+            }
+        }
+
+        .item {
+            padding: 20px 20px 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 70%;
+                aspect-ratio: 1 / 1;
+                background-color: #fff;
+                border-radius: 20px;
+                border: var(--border);
+            }
+
+            p {
+                font-size: clamp(12px, 3vw, 16px);
+                font-weight: 500;
+            }
         }
     }
 }

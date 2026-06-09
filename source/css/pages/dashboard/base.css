@@ -74,7 +74,7 @@ body main .left nav button img {
   order: -1;
 }
 body main .left nav button:hover {
-  background-color: var(--ex-one);
+  background: linear-gradient(135deg, var(--ex-one), var(--ex-two));
   cursor: pointer;
   box-shadow: 0px 0px 30px rgb(255, 255, 255);
   z-index: 10;

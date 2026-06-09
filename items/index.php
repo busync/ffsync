@@ -68,7 +68,7 @@ $userData = $userController->getUserData();
                     <div class="settings">
                         <fieldset>
                             <legend>Столбцов</legend>
-                            <input type="range" id="columns-range" min="1" max="10" value="5">
+                            <input type="range" id="columns-range" min="3" max="10" value="10">
                             <span id="columns-value">5</span>
                         </fieldset>
                     </div>
@@ -76,9 +76,10 @@ $userData = $userController->getUserData();
 
                 <div class="panel-items" id="panel-item">
                     <button class="container new"><span>+</span></button>
-                    <button class="container new"><span>+</span></button>
-                    <button class="container new"><span>+</span></button>
-                    <button class="container new"><span>+</span></button>
+                    <button class="container item">
+                        <img src="../source/imges/GitHub_Invertocat_Black_Clearspace.png" alt="">
+                        <p>Название товара</p>
+                    </button>
                 </div>
             </div>
         </div>
