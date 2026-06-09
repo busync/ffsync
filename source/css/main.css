@@ -1,0 +1,19 @@
+:root {
+  --main: #ff6400;
+  --main-hover: #cc5200;
+  --main-button: #da6900;
+  --max-width: 2000px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body * {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=main.css.map */

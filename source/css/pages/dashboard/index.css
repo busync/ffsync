@@ -1,0 +1,156 @@
+@import url("../../requirements.css");
+.main {
+  min-height: 500px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.main--header {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 30px;
+}
+.main--header h1 {
+  margin: 0;
+  font-size: clamp(24px, 5vw, 36px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main--header button {
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: clamp(14px, 5vw, 16px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main--header button:hover {
+  background-color: #333;
+}
+.main--content {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main--table-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.main--table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.main--table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0 0 10px 10px;
+}
+.main--table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 10px;
+}
+.main--table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--main-hover);
+}
+.main--table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  font-size: clamp(14px, 5vw, 16px);
+}
+.main--table code,
+.main--table a {
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  color: #d63384;
+}
+.main--table pre {
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+.main--table pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+.main--table button {
+  padding: 7px 20px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: clamp(14px, 5vw, 16px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main--table button:hover {
+  background-color: #333;
+}
+.main--table thead {
+  background-color: var(--main);
+  color: #fff;
+}
+.main--table thead th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+.main--table thead th:last-child {
+  border-right: none;
+}
+.main--table thead th:first-child {
+  border-radius: 10px 0 0 0;
+}
+.main--table thead th:last-child {
+  border-radius: 0 10px 0 0;
+}
+.main--table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+.main--table tbody tr:hover {
+  background-color: rgba(255, 100, 0, 0.05);
+}
+.main--table tbody tr:last-child {
+  border-bottom: none;
+}
+.main--table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+.main--table tbody tr td {
+  padding: 12px 15px;
+  white-space: nowrap;
+}
+.main--table tbody tr td:first-child {
+  font-weight: 600;
+  color: #333;
+}
+.main--table tbody tr td.session-token {
+  font-family: "Source Code Pro", monospace;
+  font-size: 13px;
+  color: #666;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=index.css.map */

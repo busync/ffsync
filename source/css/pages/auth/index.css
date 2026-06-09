@@ -1,0 +1,44 @@
+@import url("../../requirements.css");
+.main {
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main--body {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+}
+.main--body h1 {
+  margin: 0 0 30px 0;
+}
+.main--body fieldset {
+  border-radius: 10px;
+}
+.main--body fieldset input {
+  width: 100%;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: clamp(14px, 5vw, 16px);
+}
+.main--body button {
+  padding: 10px 40px;
+  background-color: var(--main-button);
+  margin: 10px 0;
+  color: #fff;
+  font-size: clamp(14px, 5vw, 16px);
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+.main--body .main--body--button--first {
+  background-color: #000;
+  margin: 30px 0 0 0;
+}/*# sourceMappingURL=index.css.map */

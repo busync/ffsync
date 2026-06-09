@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    RewriteRule ^core/conf/ - [F,L]
+    RewriteRule ^src/ - [F,L]
+    RewriteRule ^migration/ - [F,L]
+    
+    <Files ~ "\.(config\.php|json|sql|md)$">
+        Require all denied
+    </Files>
+    
+    ServerSignature Off
+</IfModule>
+
+Options -Indexes
+
+<Files .htaccess>
+    Require all denied
+</Files>
