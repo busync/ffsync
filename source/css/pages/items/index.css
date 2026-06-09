@@ -1,1 +1,13 @@
-/*# sourceMappingURL=index.css.map */
+.right--center--panel {
+  width: 100%;
+  padding: 20px;
+}
+.right--center--panel .panel-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.right--center--panel .panel-items .container {
+  aspect-ratio: 1/1;
+}/*# sourceMappingURL=index.css.map */

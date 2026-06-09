@@ -56,7 +56,16 @@ $userData = $userController->getUserData();
             </div>
 
             <div class="right--center--panel">
-                
+                <div class="panel-new">
+
+                </div>
+
+                <div class="panel-items" id="panel-item">
+                    <button class="container new"><span>+</span></button>
+                    <button class="container new"><span>+</span></button>
+                    <button class="container new"><span>+</span></button>
+                    <button class="container new"><span>+</span></button>
+                </div>
             </div>
         </div>
     </main>
