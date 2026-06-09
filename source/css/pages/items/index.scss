@@ -1,15 +1,38 @@
 .right--center--panel {
     width: 100%;
     padding: 20px;
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+
+    .panel-setting {
+        border: var(--border);
+        border-radius: 20px;
+        padding: 20px;
+
+        h2 {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        .settings {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        fieldset {
+            border-radius: 10px;
+        }
+    }
 
     .panel-items {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
 
         .container {
             aspect-ratio: 1 / 1;
         }
-    } 
+    }
 }

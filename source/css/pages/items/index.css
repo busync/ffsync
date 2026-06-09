@@ -1,11 +1,30 @@
 .right--center--panel {
   width: 100%;
   padding: 20px;
+  display: grid;
+  flex-direction: column;
+  gap: 20px;
+}
+.right--center--panel .panel-setting {
+  border: var(--border);
+  border-radius: 20px;
+  padding: 20px;
+}
+.right--center--panel .panel-setting h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.right--center--panel .panel-setting .settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.right--center--panel .panel-setting fieldset {
+  border-radius: 10px;
 }
 .right--center--panel .panel-items {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 .right--center--panel .panel-items .container {

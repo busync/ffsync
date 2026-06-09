@@ -17,6 +17,7 @@ $userData = $userController->getUserData();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +25,7 @@ $userData = $userController->getUserData();
     <link rel="stylesheet" href="../source/css/pages/dashboard/base.css">
     <link rel="stylesheet" href="../source/css/pages/items/index.css">
 </head>
+
 <body>
     <main>
         <div class="left">
@@ -41,7 +43,7 @@ $userData = $userController->getUserData();
             <div class="right--top--panel">
                 <form class="right--top--panel--search">
                     <input type="text" required placeholder="Поиск по аккаунту">
-                    <button>Поиск</button> 
+                    <button>Поиск</button>
                 </form>
 
                 <div class="right--top--panel--profile">
@@ -60,6 +62,18 @@ $userData = $userController->getUserData();
 
                 </div>
 
+                <div class="panel-setting">
+                    <h2>Внешний вид</h2>
+
+                    <div class="settings">
+                        <fieldset>
+                            <legend>Столбцов</legend>
+                            <input type="range" id="columns-range" min="1" max="10" value="5">
+                            <span id="columns-value">5</span>
+                        </fieldset>
+                    </div>
+                </div>
+
                 <div class="panel-items" id="panel-item">
                     <button class="container new"><span>+</span></button>
                     <button class="container new"><span>+</span></button>
@@ -69,5 +83,8 @@ $userData = $userController->getUserData();
             </div>
         </div>
     </main>
+
+    <script src="../source/js/items/visual.js"></script>
 </body>
+
 </html>
