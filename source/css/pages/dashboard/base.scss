@@ -110,11 +110,21 @@ body {
                 gap: 30px;
 
                 &--search {
+                    height: 50px;
+                    border: var(--border);
+                    padding: 5px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+
                     input {
-                        padding: 10px;
-                        border-radius: 10px;
-                        font-size: var(--ts-i);
                         border: var(--border);
+                        padding: 5px;
+                        border-radius: 10px;
+                        height: 100%;
+                        font-size: var(--ts-i);
 
                         &::placeholder {
                             font-style: italic;
@@ -122,7 +132,13 @@ body {
                     }
 
                     button {
-                        padding: 10px 30px;
+                        height: 100%;
+
+                        img {
+                            height: 100%;
+                        }
+
+                        padding: 10px;
                         background-color: var(--ex-three);
                         color: #fff;
                         border: var(--border);
@@ -130,9 +146,24 @@ body {
                     }
                 }
 
-                &--profile {
+                &--system {
+                    height: 50px;
+                    border: var(--border);
+                    padding: 5px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+
                     button {
-                        padding: 10px 30px;
+                        height: 100%;
+
+                        img {
+                            height: 100%;
+                        }
+
+                        padding: 10px;
                         background-color: var(--ex-three);
                         color: #fff;
                         border: var(--border);

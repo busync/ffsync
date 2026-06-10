@@ -53,6 +53,6 @@
   border: var(--border);
 }
 .right--center--panel .panel-items .item p {
-  font-size: clamp(12px, 3vw, 16px);
+  font-size: clamp(8px, 3vw, 14px);
   font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

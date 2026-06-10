@@ -99,11 +99,22 @@ body main .right .right--top--panel {
   flex-direction: row;
   gap: 30px;
 }
-body main .right .right--top--panel--search input {
-  padding: 10px;
-  border-radius: 10px;
-  font-size: var(--ts-i);
+body main .right .right--top--panel--search {
+  height: 50px;
   border: var(--border);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+body main .right .right--top--panel--search input {
+  border: var(--border);
+  padding: 5px;
+  border-radius: 10px;
+  height: 100%;
+  font-size: var(--ts-i);
 }
 body main .right .right--top--panel--search input::-moz-placeholder {
   font-style: italic;
@@ -112,14 +123,36 @@ body main .right .right--top--panel--search input::placeholder {
   font-style: italic;
 }
 body main .right .right--top--panel--search button {
-  padding: 10px 30px;
+  height: 100%;
+}
+body main .right .right--top--panel--search button img {
+  height: 100%;
+}
+body main .right .right--top--panel--search button {
+  padding: 10px;
   background-color: var(--ex-three);
   color: #fff;
   border: var(--border);
   border-radius: 10px;
 }
-body main .right .right--top--panel--profile button {
-  padding: 10px 30px;
+body main .right .right--top--panel--system {
+  height: 50px;
+  border: var(--border);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+body main .right .right--top--panel--system button {
+  height: 100%;
+}
+body main .right .right--top--panel--system button img {
+  height: 100%;
+}
+body main .right .right--top--panel--system button {
+  padding: 10px;
   background-color: var(--ex-three);
   color: #fff;
   border: var(--border);
