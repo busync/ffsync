@@ -99,6 +99,9 @@ body main .right .right--top--panel {
   flex-direction: row;
   gap: 30px;
 }
+body main .right .right--top--panel button:hover {
+  cursor: pointer;
+}
 body main .right .right--top--panel--search {
   height: 50px;
   border: var(--border);
@@ -124,16 +127,15 @@ body main .right .right--top--panel--search input::placeholder {
 }
 body main .right .right--top--panel--search button {
   height: 100%;
-}
-body main .right .right--top--panel--search button img {
-  height: 100%;
-}
-body main .right .right--top--panel--search button {
   padding: 10px;
   background-color: var(--ex-three);
   color: #fff;
   border: var(--border);
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+body main .right .right--top--panel--search button img {
+  height: 100%;
 }
 body main .right .right--top--panel--system {
   height: 50px;
@@ -147,14 +149,13 @@ body main .right .right--top--panel--system {
 }
 body main .right .right--top--panel--system button {
   height: 100%;
-}
-body main .right .right--top--panel--system button img {
-  height: 100%;
-}
-body main .right .right--top--panel--system button {
   padding: 10px;
   background-color: var(--ex-three);
   color: #fff;
   border: var(--border);
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+body main .right .right--top--panel--system button img {
+  height: 100%;
 }/*# sourceMappingURL=base.css.map */

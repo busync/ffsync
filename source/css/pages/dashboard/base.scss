@@ -109,6 +109,10 @@ body {
                 flex-direction: row;
                 gap: 30px;
 
+                button:hover {
+                    cursor: pointer;
+                }
+
                 &--search {
                     height: 50px;
                     border: var(--border);
@@ -133,16 +137,16 @@ body {
 
                     button {
                         height: 100%;
-
-                        img {
-                            height: 100%;
-                        }
-
                         padding: 10px;
                         background-color: var(--ex-three);
                         color: #fff;
                         border: var(--border);
                         border-radius: 10px;
+                        transition: all 0.3s ease;
+
+                        img {
+                            height: 100%;
+                        }
                     }
                 }
 
@@ -158,16 +162,16 @@ body {
 
                     button {
                         height: 100%;
-
-                        img {
-                            height: 100%;
-                        }
-
                         padding: 10px;
                         background-color: var(--ex-three);
                         color: #fff;
                         border: var(--border);
                         border-radius: 10px;
+                        transition: all 0.3s ease;
+
+                        img {
+                            height: 100%;
+                        }
                     }
                 }
             }
