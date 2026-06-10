@@ -21,7 +21,7 @@ $userData = $userController->getUserData();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная | FFsync</title>
-    <link rel="stylesheet" href="../source/css/pages/dashboard/index.css">
+    <link rel="stylesheet" href="../source/css/pages/dashboard/base.css">
 </head>
 <body>
     <main>
