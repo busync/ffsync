@@ -40,22 +40,21 @@ $userData = $userController->getUserData();
             <div class="right--top--panel">
                 <form class="right--top--panel--search">
                     <input type="text" required placeholder="Поиск по аккаунту">
-                    <button>Поиск</button> 
+                    <button><img src="../source/imges/search.png" alt=""></button>
                 </form>
 
-                <div class="right--top--panel--profile">
+                <div class="right--top--panel--system">
                     <button onclick="window.location = ''">
-                        <?php if (isset($userData['username'])): ?>
-                            <?php echo htmlspecialchars($userData['username']) ?>
-                        <?php else: ?>
-                            Профиль
-                        <?php endif ?>
+                        <img src="../source/imges/sun.png" alt="">
+                    </button>
+                    <button onclick="window.location = ''">
+                        <img src="../source/imges/person.png" alt="">
                     </button>
                 </div>
             </div>
 
             <div class="right--center--panel">
-                <!-- todo -->
+                
             </div>
         </div>
     </main>
