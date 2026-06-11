@@ -92,7 +92,7 @@ body main .right {
 }
 body main .right .right--top--panel {
   width: 100%;
-  padding: 20px 20px 20px 20%;
+  padding: 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -102,8 +102,8 @@ body main .right .right--top--panel {
 body main .right .right--top--panel button:hover {
   cursor: pointer;
 }
-body main .right .right--top--panel--search {
-  height: 50px;
+body main .right .right--top--panel--search, body main .right .right--top--panel--system {
+  height: 40px;
   border: var(--border);
   padding: 5px;
   border-radius: 10px;
@@ -112,50 +112,28 @@ body main .right .right--top--panel--search {
   align-items: center;
   gap: 5px;
 }
-body main .right .right--top--panel--search input {
+body main .right .right--top--panel--search input, body main .right .right--top--panel--system input {
   border: var(--border);
   padding: 5px;
   border-radius: 10px;
   height: 100%;
   font-size: var(--ts-i);
 }
-body main .right .right--top--panel--search input::-moz-placeholder {
+body main .right .right--top--panel--search input::-moz-placeholder, body main .right .right--top--panel--system input::-moz-placeholder {
   font-style: italic;
 }
-body main .right .right--top--panel--search input::placeholder {
+body main .right .right--top--panel--search input::placeholder, body main .right .right--top--panel--system input::placeholder {
   font-style: italic;
 }
-body main .right .right--top--panel--search button {
+body main .right .right--top--panel--search button, body main .right .right--top--panel--system button {
   height: 100%;
-  padding: 10px;
-  background-color: var(--ex-three);
-  color: #fff;
-  border: var(--border);
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-body main .right .right--top--panel--search button img {
-  height: 100%;
-}
-body main .right .right--top--panel--system {
-  height: 50px;
-  border: var(--border);
   padding: 5px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-body main .right .right--top--panel--system button {
-  height: 100%;
-  padding: 10px;
   background-color: var(--ex-three);
   color: #fff;
   border: var(--border);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-body main .right .right--top--panel--system button img {
+body main .right .right--top--panel--search button img, body main .right .right--top--panel--system button img {
   height: 100%;
 }/*# sourceMappingURL=base.css.map */

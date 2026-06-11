@@ -102,7 +102,7 @@ body {
 
             .right--top--panel {
                 width: 100%;
-                padding: 20px 20px 20px 20%;
+                padding: 5px;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -113,8 +113,8 @@ body {
                     cursor: pointer;
                 }
 
-                &--search {
-                    height: 50px;
+                &--search, &--system {
+                    height: 40px;
                     border: var(--border);
                     padding: 5px;
                     border-radius: 10px;
@@ -137,32 +137,7 @@ body {
 
                     button {
                         height: 100%;
-                        padding: 10px;
-                        background-color: var(--ex-three);
-                        color: #fff;
-                        border: var(--border);
-                        border-radius: 10px;
-                        transition: all 0.3s ease;
-
-                        img {
-                            height: 100%;
-                        }
-                    }
-                }
-
-                &--system {
-                    height: 50px;
-                    border: var(--border);
-                    padding: 5px;
-                    border-radius: 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 5px;
-
-                    button {
-                        height: 100%;
-                        padding: 10px;
+                        padding: 5px;
                         background-color: var(--ex-three);
                         color: #fff;
                         border: var(--border);
