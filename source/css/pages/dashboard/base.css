@@ -39,8 +39,8 @@ body main .left {
   transition: all 0.3s ease;
 }
 body main .left:hover {
-  background-color: var(--ex-five);
-  width: 150px;
+  background: linear-gradient(135deg, #666, #000);
+  width: 250px;
   border-radius: 0;
 }
 body main .left:hover nav {
@@ -50,14 +50,17 @@ body main .left nav {
   transition: all 0.3s ease;
   display: none;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 body main .left nav button {
-  width: 100%;
-  padding: 40px 0px 40px 20px;
-  border: 0;
-  background-color: var(--ex-five);
+  width: 95%;
+  padding: 25px 0px 25px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2666666667);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.0666666667);
   color: #fff;
-  border-top: 1px solid #fff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -74,13 +77,10 @@ body main .left nav button img {
   order: -1;
 }
 body main .left nav button:hover {
-  background: linear-gradient(135deg, var(--ex-one), var(--ex-two));
+  background: linear-gradient(135deg, var(--ex-three), var(--ex-four));
   cursor: pointer;
-  box-shadow: 0px 0px 30px rgb(255, 255, 255);
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
   z-index: 10;
-}
-body main .left nav button:last-child {
-  border-bottom: 1px solid #fff;
 }
 body main .right {
   flex: 1;

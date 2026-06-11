@@ -17,22 +17,25 @@ $userData = $userController->getUserData();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная | FFsync</title>
     <link rel="stylesheet" href="../source/css/pages/dashboard/base.css">
+    <link rel="stylesheet" href="../source/css/pages/dashboard/index.css">
 </head>
+
 <body>
     <main>
         <div class="left">
             <nav>
-                <button>Главная</button>
-                <button>Заказы</button>
-                <button>Товары</button>
-                <button>Web</button>
-                <button>Статистика</button>
-                <button>Настройки</button>
+                <button><img src="../source/imges/main.png" alt="">Главная</button>
+                <button><img src="../source/imges/orders.png" alt="">Заказы</button>
+                <button><img src="../source/imges/items.png" alt="">Товары</button>
+                <button><img src="../source/imges/web.png" alt="">Web</button>
+                <button><img src="../source/imges/statistic.png" alt="">Статистика</button>
+                <button><img src="../source/imges/setting.png" alt="">Настройки</button>
             </nav>
         </div>
 
@@ -54,7 +57,9 @@ $userData = $userController->getUserData();
             </div>
 
             <div class="right--center--panel">
-                <h1>Привет, <?= $userData['data']['username'] ?></h1>
+                <div class="panel--header">
+                    <p>Привет, <?= $userData['data']['username'] ?></p>
+                </div>
             </div>
         </div>
     </main>
