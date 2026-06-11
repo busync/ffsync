@@ -55,11 +55,6 @@ $userData = $userController->getUserData();
 
             <div class="right--center--panel">
                 <h1>Привет, <?= $userData['data']['username'] ?></h1>
-                <pre>
-                    <code>
-                <?php var_dump($userData) ?>
-                    </code>
-                </pre>
             </div>
         </div>
     </main>
