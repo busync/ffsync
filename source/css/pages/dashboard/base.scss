@@ -155,6 +155,39 @@ body {
                     }
                 }
             }
+
+            .right--center--panel {
+
+                .desc,
+                .inf,
+                .wrr {
+                    max-width: 30%;
+                    padding: 10px;
+                    font-size: var(--ts-i);
+                    border-radius: 10px;
+                    color: #fff;
+                }
+
+                .ttl {
+                    font-size: var(--ts-b);
+                    font-weight: 700;
+                }
+
+                .desc {
+                    border-left: 3px solid #000;
+                    background-color: var(--ex-six);
+                }
+
+                .inf {
+                    border-left: 3px solid var(--ex-two);
+                    background-color: var(--ex-one);
+                }
+
+                .wrr {
+                    border-left: 3px solid var(--ex-four);
+                    background-color: var(--ex-three);
+                }
+            }
         }
     }
 }

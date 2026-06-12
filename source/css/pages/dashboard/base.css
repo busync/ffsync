@@ -140,4 +140,29 @@ body main .right .right--top--panel--search button, body main .right .right--top
 }
 body main .right .right--top--panel--search button img, body main .right .right--top--panel--system button img {
   height: 100%;
+}
+body main .right .right--center--panel .desc,
+body main .right .right--center--panel .inf,
+body main .right .right--center--panel .wrr {
+  max-width: 30%;
+  padding: 10px;
+  font-size: var(--ts-i);
+  border-radius: 10px;
+  color: #fff;
+}
+body main .right .right--center--panel .ttl {
+  font-size: var(--ts-b);
+  font-weight: 700;
+}
+body main .right .right--center--panel .desc {
+  border-left: 3px solid #000;
+  background-color: var(--ex-six);
+}
+body main .right .right--center--panel .inf {
+  border-left: 3px solid var(--ex-two);
+  background-color: var(--ex-one);
+}
+body main .right .right--center--panel .wrr {
+  border-left: 3px solid var(--ex-four);
+  background-color: var(--ex-three);
 }/*# sourceMappingURL=base.css.map */

@@ -42,6 +42,12 @@ $userData = $userController->getUserData();
                 -->
 
                 <div class="panel-items">
+                    <p class="ttl">Товары</p>
+
+                    <p class="desc">Здесь вы можете добавить, просмотреть, отредактировать или удалить товары.</p>
+
+                    <p class="wrr">Товары, добавленные здесь, можно добавить на сайт, если он есть.</p>
+
                     <div class="item-table">
                         <table>
                             <thead>
