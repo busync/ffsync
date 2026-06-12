@@ -1,5 +1,6 @@
 <?php
-require '../autoload.php';
+define("RootPath", "../");
+require RootPath . 'autoload.php';
 
 use App\Controllers\UserController;
 use App\Database\Database;
@@ -9,7 +10,7 @@ $pdo = $db->getConnection();
 
 $userController = new UserController($pdo);
 if (!$userController->isAuthenticated()) {
-    header('Location: ../login/');
+    header('Location: ' . RootPath . 'login/');
     exit;
 }
 
@@ -28,33 +29,10 @@ $userData = $userController->getUserData();
 
 <body>
     <main>
-        <div class="left">
-            <nav>
-                <button>Главная</button>
-                <button>Заказы</button>
-                <button>Товары</button>
-                <button>Web</button>
-                <button>Статистика</button>
-                <button>Настройки</button>
-            </nav>
-        </div>
+        <?php include(RootPath . "blade/left-slide-nav.php") ?>
 
         <div class="right">
-            <div class="right--top--panel">
-                <form class="right--top--panel--search">
-                    <input type="text" required placeholder="Поиск по аккаунту">
-                    <button><img src="../source/imges/search.png" alt=""></button>
-                </form>
-
-                <div class="right--top--panel--system">
-                    <button onclick="window.location = ''">
-                        <img src="../source/imges/sun.png" alt="">
-                    </button>
-                    <button onclick="window.location = ''">
-                        <img src="../source/imges/person.png" alt="">
-                    </button>
-                </div>
-            </div>
+            <?php include(RootPath . "blade/top-nav.php") ?>
 
             <div class="right--center--panel">
                 <!--
