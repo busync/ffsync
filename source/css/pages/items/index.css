@@ -1,58 +1,65 @@
 .right--center--panel {
   width: 100%;
   padding: 20px;
-  display: grid;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-}
-.right--center--panel .panel-setting {
-  border: var(--border);
-  border-radius: 20px;
-  padding: 20px;
-}
-.right--center--panel .panel-setting h2 {
-  margin: 0;
-  margin-bottom: 20px;
-}
-.right--center--panel .panel-setting .settings {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-.right--center--panel .panel-setting fieldset {
-  border-radius: 10px;
 }
 .right--center--panel .panel-items {
   width: 100%;
-  display: grid;
-  gap: 20px;
-  overflow-y: scroll;
+  padding: 20px;
 }
-.right--center--panel .panel-items .container {
-  aspect-ratio: 1/1;
-  border-radius: 20px;
-  border: var(--border);
-  background: linear-gradient(135deg, var(--ex-one), var(--ex-two));
+.right--center--panel .panel-items .item-table {
+  max-width: 1000px;
+  width: 100%;
+  overflow-x: auto;
+}
+.right--center--panel .panel-items .item-table table {
+  min-width: 300px;
+  max-width: 1000px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.right--center--panel .panel-items .item-table table thead {
+  background: #000;
+}
+.right--center--panel .panel-items .item-table table thead tr th {
+  padding: 10px 15px;
+  color: #fff;
+  font-size: var(--ts-i);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+.right--center--panel .panel-items .item-table table tbody tr:nth-child(even) {
+  background: var(--ex-six);
   color: #fff;
 }
-.right--center--panel .panel-items .new span {
-  font-size: 50px;
+.right--center--panel .panel-items .item-table table tbody tr td {
+  padding: 5px;
+  font-size: var(--ts-i);
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
 }
-.right--center--panel .panel-items .item {
-  padding: 20px 20px 10px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.right--center--panel .panel-items .item-table table tbody tr td:first-child {
+  text-align: center;
 }
-.right--center--panel .panel-items .item img {
-  width: 70%;
-  aspect-ratio: 1/1;
+.right--center--panel .panel-items .item-table table tbody tr td:first-child img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #000;
   background-color: #fff;
-  border-radius: 20px;
-  border: var(--border);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.right--center--panel .panel-items .item p {
-  font-size: clamp(8px, 3vw, 14px);
-  font-weight: 500;
+.right--center--panel .panel-items .item-table table tbody tr:last-child td {
+  border-bottom: none;
 }/*# sourceMappingURL=index.css.map */

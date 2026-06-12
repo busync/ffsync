@@ -41,30 +41,46 @@ $userData = $userController->getUserData();
                 </div>
                 -->
 
-                <div class="panel-setting">
-                    <h2>Внешний вид</h2>
-
-                    <div class="settings">
-                        <fieldset>
-                            <legend>Столбцов</legend>
-                            <input type="range" id="columns-range" min="3" max="10" value="10">
-                            <span id="columns-value">5</span>
-                        </fieldset>
+                <div class="panel-items">
+                    <div class="item-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Название</th>
+                                    <th>Описание</th>
+                                    <th>Дата добавления</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src=" ../source/imges/GitHub_Invertocat_Black_Clearspace.png" alt="">
+                                    </td>
+                                    <td>Товар 1</td>
+                                    <td>Этот товар предназначен для определенной группы людей</td>
+                                    <td>12.06.2026</td>
+                                </tr>
+                                <tr>
+                                    <td><img src=" ../source/imges/GitHub_Invertocat_Black_Clearspace.png" alt="">
+                                    </td>
+                                    <td>Товар 2</td>
+                                    <td>Этот товар предназначен для определенной группы людей</td>
+                                    <td>12.06.2026</td>
+                                </tr>
+                                <tr>
+                                    <td><img src=" ../source/imges/GitHub_Invertocat_Black_Clearspace.png" alt="">
+                                    </td>
+                                    <td>Товар 2</td>
+                                    <td>Этот товар предназначен для определенной группы людей</td>
+                                    <td>12.06.2026</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-
-                <div class="panel-items" id="panel-item">
-                    <button class="container new"><span>+</span></button>
-                    <button class="container item">
-                        <img src="../source/imges/GitHub_Invertocat_Black_Clearspace.png" alt="">
-                        <p>Название товара</p>
-                    </button>
                 </div>
             </div>
         </div>
     </main>
-
-    <script src="../source/js/items/visual.js"></script>
 </body>
 
 </html>
