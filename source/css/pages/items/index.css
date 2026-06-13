@@ -1,0 +1,65 @@
+.right--center--panel {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.right--center--panel .panel-items {
+  width: 100%;
+  padding: 20px;
+}
+.right--center--panel .panel-items .item-table {
+  max-width: 1000px;
+  width: 100%;
+  overflow-x: auto;
+}
+.right--center--panel .panel-items .item-table table {
+  min-width: 300px;
+  max-width: 1000px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.right--center--panel .panel-items .item-table table thead {
+  background: #000;
+}
+.right--center--panel .panel-items .item-table table thead tr th {
+  padding: 10px 15px;
+  color: #fff;
+  font-size: var(--ts-i);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+.right--center--panel .panel-items .item-table table tbody tr:nth-child(even) {
+  background: var(--ex-six);
+  color: #fff;
+}
+.right--center--panel .panel-items .item-table table tbody tr td {
+  padding: 5px;
+  font-size: var(--ts-i);
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+.right--center--panel .panel-items .item-table table tbody tr td:first-child {
+  text-align: center;
+}
+.right--center--panel .panel-items .item-table table tbody tr td:first-child img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.right--center--panel .panel-items .item-table table tbody tr:last-child td {
+  border-bottom: none;
+}/*# sourceMappingURL=index.css.map */

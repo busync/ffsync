@@ -1,0 +1,168 @@
+@import url("../../requirements.css");
+* {
+  font-family: var(--sans-code);
+  box-sizing: border-box;
+}
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  height: 100vh;
+  min-height: 1000px;
+  width: 100%;
+  min-width: 1000px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+body {
+  height: 100%;
+  max-width: 3000px;
+}
+body main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+body main .left {
+  height: auto;
+  align-self: stretch;
+  width: 30px;
+  padding: 50px 0;
+  background-color: var(--ex-three);
+  transition: all 0.3s ease;
+}
+body main .left:hover {
+  background: linear-gradient(135deg, #666, #000);
+  width: 250px;
+  border-radius: 0;
+}
+body main .left:hover nav {
+  display: flex;
+}
+body main .left nav {
+  transition: all 0.3s ease;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+body main .left nav button {
+  width: 95%;
+  padding: 25px 0px 25px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2666666667);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.0666666667);
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: all 0.3s ease;
+  text-align: right;
+  box-sizing: border-box;
+}
+body main .left nav button img {
+  margin-right: 10px;
+  height: 25px;
+  order: -1;
+  transition: all 0.7s ease;
+}
+body main .left nav button:hover {
+  background: linear-gradient(135deg, var(--ex-three), var(--ex-four));
+  cursor: pointer;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+  z-index: 10;
+}
+body main .left nav button:hover img {
+  transform: rotate(360deg);
+}
+body main .right {
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body main .right .right--top--panel {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+body main .right .right--top--panel button:hover {
+  cursor: pointer;
+}
+body main .right .right--top--panel--search, body main .right .right--top--panel--system {
+  height: 40px;
+  border: var(--border);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+body main .right .right--top--panel--search input, body main .right .right--top--panel--system input {
+  border: var(--border);
+  padding: 5px;
+  border-radius: 10px;
+  height: 100%;
+  font-size: var(--ts-i);
+}
+body main .right .right--top--panel--search input::-moz-placeholder, body main .right .right--top--panel--system input::-moz-placeholder {
+  font-style: italic;
+}
+body main .right .right--top--panel--search input::placeholder, body main .right .right--top--panel--system input::placeholder {
+  font-style: italic;
+}
+body main .right .right--top--panel--search button, body main .right .right--top--panel--system button {
+  height: 100%;
+  padding: 5px;
+  background-color: var(--ex-three);
+  color: #fff;
+  border: var(--border);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+body main .right .right--top--panel--search button img, body main .right .right--top--panel--system button img {
+  height: 100%;
+}
+body main .right .right--center--panel .desc,
+body main .right .right--center--panel .inf,
+body main .right .right--center--panel .wrr {
+  max-width: 30%;
+  padding: 10px;
+  font-size: var(--ts-i);
+  border-radius: 10px;
+  color: #fff;
+}
+body main .right .right--center--panel .ttl {
+  font-size: var(--ts-b);
+  font-weight: 700;
+}
+body main .right .right--center--panel .desc {
+  border-left: 3px solid #000;
+  background-color: var(--ex-six);
+}
+body main .right .right--center--panel .inf {
+  border-left: 3px solid var(--ex-two);
+  background-color: var(--ex-one);
+}
+body main .right .right--center--panel .wrr {
+  border-left: 3px solid var(--ex-four);
+  background-color: var(--ex-three);
+}/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,81 @@
+.right--center--panel {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .panel-items {
+        width: 100%;
+        padding: 20px;
+
+        .item-table {
+            max-width: 1000px;
+            width: 100%;
+            overflow-x: auto;
+
+            table {
+                min-width: 300px;
+                max-width: 1000px;
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0;
+                background: #fff;
+                border-radius: 10px;
+                overflow: hidden;
+                border: 1px solid #000;
+
+                thead {
+                    background: #000;
+
+                    tr {
+                        th {
+                            padding: 10px 15px;
+                            color: #fff;
+                            font-size: var(--ts-i);
+                            font-weight: 600;
+                            text-align: left;
+                            border-bottom: 1px solid #000;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        &:nth-child(even) {
+                            background: var(--ex-six);
+                            color: #fff;
+                        }
+
+                        td {
+                            padding: 5px;
+                            font-size: var(--ts-i);
+                            vertical-align: middle;
+                            border-bottom: 1px solid #000;
+
+                            &:first-child {
+                                text-align: center;
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 10px;
+                                    border: 1px solid #000;
+                                    background-color: #fff;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+
+                        &:last-child td {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
